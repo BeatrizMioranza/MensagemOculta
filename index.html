@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mensagem Oculta</title>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset class="fieldset">
+            <p>Mensagem Oculta</p>
+            <div class="mensagem">
+                <label for="msg">Mensagem:</label><br>
+                <textarea class="area" id="msg"></textarea>
+            </div>
+            <div class="select">
+                <select name="" id="">
+                    <option value="cesar">Cifra de César</option>
+                    <option value="base">Base 64</option>
+                </select>
+            </div>
+            <div class="selecionar">
+                <input type="radio" name="select" id="codificar" value="cod">
+                <label for="codificar">Codificar</label>
+                <input type="radio" name="select" id="decodificar" value="dec">
+                <label for="decodificar">Decodificar</label>
+            </div>
+            <div class="mensagem">
+                <label for="msg">Resultado</label><br>
+                <textarea class="area" id="msg"></textarea>
+            </div>
+            <div class="bnt">
+
+            </div>
+        </fieldset>
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+</html>

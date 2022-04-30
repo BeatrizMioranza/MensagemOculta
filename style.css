@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+.fieldset{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.area{
+    width: 234px; 
+    height: 122px;
+}
