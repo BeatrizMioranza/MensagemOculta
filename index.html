@@ -9,15 +9,16 @@
     <title>Mensagem Oculta</title>
 </head>
 
-<body>
+<body class="imagemfundo">
+        <h1>.codificando</h1>
     <form action="#">
         <fieldset class="fieldset">
-            <p>Mensagem Oculta</p>
             <div class="divMensagem">
-                <label>Mensagem:</label><br>
-                <textarea placeholder="Escreva sua mensagem" class="area" name="nomeMensagem" id="msg"></textarea>
+                <label>Mensagem</label><br>
+                <textarea placeholder="Digite sua mensagem" class="area" name="nomeMensagem" id="msg"></textarea>
             </div>
             <div class="selecionar">
+                <label>Selecione o tipo de codificação</label>
                 <select id="seletor">
                     <option value="">Selecione</option>
                     <option value="cesar">Cifra de César</option>
@@ -31,18 +32,21 @@
                 <input type="radio" name="escolha" id="decodificar" value="dec">
                 <label for="decodificar">Decodificar</label>
             </div>
-            <div class="" id="">
-                <label for="passo">Valor deslocamento:</label>
+            <div class="desloca" id="desloca">
+                <label for="passo">Valor deslocamento</label>
                 <input type="number" id="deslocamento" name="passo" min="1" max="25">
             </div>
             <div class="divResultado">
                 <label for="nomeResultado">Resultado</label><br>
-                <textarea class="area" name="nomeResultado" id="resultado"></textarea>
+                <textarea class="area" placeholder="Sua mensagem será gerada aqui" name="nomeResultado" id="resultado"></textarea>
             </div>
             <div id="btn" class="btn">
             </div>
         </fieldset>
     </form>
+    <footer>
+        <br>
+    </footer>
     <script src="./index.js"></script>
 </body>
 

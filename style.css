@@ -2,17 +2,35 @@
     margin: 0px;
     padding: 0px;;
 }
+body{
+    background-image: url("./img/17af80c2ed61759c8a81ffa7b4915397.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 form{
+    display: flex;
+    justify-content:space-between;
+
+}
+.titulo{
     display: flex;
     justify-content: center;
 }
 .fieldset{
     width: 40%;
+    height: 40%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 7%;
+    margin-right: 10%;
+    background-color: antiquewhite;
+
 }
 .area{
     width: 234px; 
     height: 122px;
+}
+.desloca{
+    display: none;
 }

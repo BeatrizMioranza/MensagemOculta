@@ -1,4 +1,13 @@
+var desloca = document.querySelector("#desloca")
+var selecionar = document.querySelector("#seletor")
+selecionar.addEventListener("change", function(){
+    if(selecionar.value == "cesar"){
+        desloca.style.display = "flex"
+    } else{ 
+        desloca.style.display = "none"
+    }
 
+})
 // Botão decodificar e verificador de Base || César
 var decodificar = document.querySelector("#decodificar")
 decodificar.addEventListener("click", function () {
