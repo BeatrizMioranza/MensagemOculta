@@ -14,27 +14,26 @@
         <fieldset class="fieldset">
             <p>Mensagem Oculta</p>
             <div class="mensagem">
-                <label for="msg">Mensagem:</label><br>
-                <textarea class="area" id="msg"></textarea>
+                <label>Mensagem:</label><br>
+                <textarea class="area" name="nomeMensagem" id="msg"></textarea>
             </div>
-            <div class="select">
-                <select name="" id="">
+            <div class="selecionar">
+                <select  id="seletor">
                     <option value="cesar">Cifra de César</option>
                     <option value="base">Base 64</option>
                 </select>
             </div>
             <div class="selecionar">
-                <input type="radio" name="select" id="codificar" value="cod">
+                <input type="radio" name="decodificar" id="codificar" value="cod">
                 <label for="codificar">Codificar</label>
-                <input type="radio" name="select" id="decodificar" value="dec">
+                <input type="radio" name="decodificar" id="decodificar" value="dec">
                 <label for="decodificar">Decodificar</label>
             </div>
             <div class="mensagem">
-                <label for="msg">Resultado</label><br>
-                <textarea class="area" id="msg"></textarea>
+                <label for="nomeMensagem">Resultado</label><br>
+                <textarea class="area" name="nomeResultado" id="resultado"></textarea>
             </div>
-            <div class="bnt">
-
+            <div id="btn" class="btn">
             </div>
         </fieldset>
     </form>
