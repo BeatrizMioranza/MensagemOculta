@@ -6,16 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Mensagem Oculta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="favicon/icon_89b52ba408ee52a39e8d83aab64f704a.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>.codificando</title>
 </head>
 
-<body class="imagemfundo">
-        <h1>.codificando</h1>
-    <form action="#">
-        <fieldset class="fieldset">
-            <div class="divMensagem">
-                <label>Mensagem</label><br>
-                <textarea placeholder="Digite sua mensagem" class="area" name="nomeMensagem" id="msg"></textarea>
+<body>
+    <div class="imagemfundo">
+        <nav class="navPrincipal">
+            <a href="#div2">[codificador]</a>
+            <a href="#sobre">[sobre os códigos]</a>
+        </nav>
+        <div>
+            <h1 class="titulo">.codificando</h1>
+            <div class="divTitulo">
+                <p class="paragrafo">A codificação pode ser entendida como um processo de compilação, organização e
+                    sistematização de diversas
+                    normas, princípios e regras sobre relações jurídicas de natureza comum ou pertencentes a determinado
+                    ramo do
+                    direito. </p>
+            </div>
+        </div>
+    </div>
+    <div class="div1"></div>
+    <div class="div2" id="div2">
+        <a href="#div2">
+            <img class="seta" src="./img/seta.png" alt="Seta branca">
+        </a>
+    </div>
+    <form id="form">
+        <div class="divPrincipal">
+            <div class="areaTexto">
+                <div class="divMensagem">
+                    <label>Mensagem</label><br>
+                    <textarea placeholder="Digite sua mensagem" class="area" name="nomeMensagem" id="msg"></textarea>
+                </div>
+                <div class="divResultado">
+                    <label for="nomeResultado">Resultado</label><br>
+                    <textarea class="area" placeholder="Sua mensagem será gerada aqui" name="nomeResultado"
+                        id="resultado"></textarea>
+                </div>
             </div>
             <div class="selecionar">
                 <label>Selecione o tipo de codificação</label>
@@ -36,16 +69,41 @@
                 <label for="passo">Valor deslocamento</label>
                 <input type="number" id="deslocamento" name="passo" min="1" max="25">
             </div>
-            <div class="divResultado">
-                <label for="nomeResultado">Resultado</label><br>
-                <textarea class="area" placeholder="Sua mensagem será gerada aqui" name="nomeResultado" id="resultado"></textarea>
-            </div>
             <div id="btn" class="btn">
             </div>
-        </fieldset>
+        </div>
     </form>
+    <div id="sobre" class="sobre">
+        <h2 class="subTitulo">{sobre os códigos]</h2>
+        <div class="explicacao">
+            <p>
+                <span>.cifra de césar</span>
+                <br>
+                Júlio César, imperador romano de 100 a.C. a 44 a.C., utilizava um código para proteger as mensagens
+                enviadas a seus generais. Assim, se a mensagem caísse em mãos inimigas, a informação não poderia ser
+                compreendida. Cada letra do alfabeto era substituída pela letra três posições à frente, ou seja, o “A”
+                era substituído pelo “D”, o “B” pelo “E”, o “C” pelo “F”, e assim sucessivamente. Qualquer código que
+                tenha esse padrão é considerado uma Cifra de César, também conhecida como Código de César.
+            </p>
+
+            <p>
+                <span>.base 64</span>
+                <br>
+                Desenvolvido pelo pintor e inventor Samuel Morse em 1835, o sistema utiliza sons curtos e longos –
+                representados por pontos e traços – para transmitir mensagens. Esse meio de comunicação foi muito
+                utilizado por marinheiros durante o século XIX, pois possibilitava transmitir informações a distância.
+                As mensagens são transmitidas por meio de som ou luz, podendo ser captadas por aparelhos como o
+                telégrafo.
+            </p>
+        </div>
+    </div>
     <footer>
-        <br>
+        <p class="textofinal">Todos os direitos reservados &copy;2022 Produzido por: Beatriz Mioranza
+            <a target="_blanck" href="https://www.linkedin.com/in/beatrizmioranza/"><i
+                    class="devicon-linkedin-plain"></i></a>
+            <br>
+            Projeto para fins educacionais.
+        </p>
     </footer>
     <script src="./index.js"></script>
 </body>

@@ -31,7 +31,7 @@ decodificar.addEventListener("click", function () {
         } else if (seletor == "cesar") {
             return descodificarCesar()
         } else {
-            alert("Escreva sua mensagem")
+            alert("Selecione uma opção")
         }
     })
 });
@@ -60,7 +60,7 @@ codificar.addEventListener("click", function () {
             return codificarCesar()
                   
         } else {
-            alert("Escreva sua mensagem")
+            alert("Selecione uma opção")
         }
     })
 });
