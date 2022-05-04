@@ -31,7 +31,7 @@ decodificar.addEventListener("click", function () {
         } else if (seletor == "cesar") {
             return descodificarCesar()
         } else {
-            alert("Selecione uma opção")
+            alert("Verifique as informações")
         }
     })
 });
@@ -58,9 +58,8 @@ codificar.addEventListener("click", function () {
             return codificadorBase64()
         } else if (seletor == "cesar") {
             return codificarCesar()
-                  
         } else {
-            alert("Selecione uma opção")
+            alert("Verifique as informações")
         }
     })
 });
@@ -89,6 +88,11 @@ function codificarCesar(){
     if(codAscii >= 65 && codAscii <= 90){
        var operacao = (codAscii - 65 + teste) % 26
      msgCodigo += String.fromCharCode(operacao + 65);
+    } else if (codAscii >= 97 && codAscii <= 122){
+        var operacao = (codAscii - 97 + teste) % 26
+      msgCodigo += String.fromCharCode(operacao + 97);
+    } else {
+        msgCodigo += mensagem[i]
     }
 }
     resultado.innerText = msgCodigo
@@ -105,7 +109,13 @@ function descodificarCesar(){
     if(codAscii >= 65 && codAscii <= 90){
        var operacao = (codAscii - 65 - teste + 26) % 26
      msgCodigo += String.fromCharCode(operacao + 65);
+    }else if (codAscii >= 97 && codAscii <= 122){
+            var operacao = (codAscii - 97 - teste + 26) % 26
+          msgCodigo += String.fromCharCode(operacao + 97);
+    } else {
+          msgCodigo += mensagem[i]
     }
-    resultado.innerText= msgCodigo
+    resultado.innerText = msgCodigo
+
 }
 }
