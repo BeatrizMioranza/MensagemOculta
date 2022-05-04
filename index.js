@@ -20,7 +20,7 @@ decodificar.addEventListener("click", function () {
     var botao = document.createElement('button')
     botao.setAttribute("id", "idbotao")
     btn.append(botao)
-    botao.innerText = `Decodificar Mensagem!`
+    botao.innerText = `Decodificar Mensagem`
     var prevent = document.querySelector('#idbotao')
     prevent.addEventListener("click", (e) => {
         e.preventDefault();
@@ -48,7 +48,7 @@ codificar.addEventListener("click", function () {
     var botao = document.createElement('button')
     botao.setAttribute("id", "idbotao")
     btn.append(botao)
-    botao.innerText = `Codificar Mensagem!`
+    botao.innerText = `Codificar Mensagem`
     var prevent = document.querySelector('#idbotao')
     prevent.addEventListener("click", (e) => {
         e.preventDefault();

@@ -76,8 +76,8 @@ a:hover {
 form {
     display: flex;
     justify-content: center;
-    background-color:#0E163B;
-    height: 550px;
+    background-color: #0E163B;
+    height: 500px;
 
 }
 
@@ -85,6 +85,7 @@ form {
     display: flex;
     justify-content: center;
 }
+
 .area {
     width: 500px;
     height: 250px;
@@ -101,28 +102,42 @@ form {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap:20px;
+    gap: 30px;
     padding-bottom: 50px;
 
 }
+
 textarea::placeholder {
     font-family: 'Asap', sans-serif;
-  }
+    padding: 10px;
+}
 
 .selecionar {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
     font-family: 'Asap', sans-serif;
     font-size: 20px;
     gap: 10px;
     color: aliceblue;
 
 }
-input{
-    margin: 5px;
+
+.selecionar label {
+    cursor: pointer;
 }
-.seletor{
+
+.radio {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid aliceblue;
+
+}
+
+.seletor {
     color: aliceblue;
     font-size: 20px;
     font-family: 'Asap', sans-serif;
@@ -130,15 +145,53 @@ input{
     margin-bottom: 1em;
 
 }
-select{
+
+select {
     font-family: 'Asap', sans-serif;
     text-align: center;
     font-size: 15px;
     padding: 5px;
     border-radius: 5px;
+    cursor: pointer;
 }
+
 .desloca {
     display: none;
+}
+
+.inputDeslocamento {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.desloca label {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#idbotao {
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid aliceblue;
+    cursor: pointer;
 }
 
 .sobre {
@@ -152,7 +205,7 @@ select{
     font-family: 'Asap', sans-serif;
     text-align: center;
     padding-top: 20px;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .explicacao {
