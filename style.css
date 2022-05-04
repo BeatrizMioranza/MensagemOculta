@@ -86,8 +86,8 @@ form {
     justify-content: center;
 }
 .area {
-    width: 434px;
-    height: 222px;
+    width: 500px;
+    height: 250px;
     border-radius: 5px;
 }
 
@@ -102,7 +102,7 @@ form {
     align-items: center;
     flex-direction: row;
     gap:20px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
 }
 textarea::placeholder {
@@ -111,11 +111,32 @@ textarea::placeholder {
 
 .selecionar {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    flex-direction: row;
+    justify-content:center;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    gap: 10px;
+    color: aliceblue;
 
 }
+input{
+    margin: 5px;
+}
+.seletor{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
 
+}
+select{
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
 .desloca {
     display: none;
 }
@@ -124,7 +145,7 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #b2bbe7a2;
+    background-color: #dcdff096;
 }
 
 .subTitulo {
