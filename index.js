@@ -82,14 +82,14 @@ function codificarCesar(){
     var resultado = document.querySelector("#resultado")
     var mensagem = document.querySelector("#msg").value
     var msgCodigo= ""
-    var teste = parseInt(deslocamento)
+    var desloca = parseInt(deslocamento)
     for (var i = 0; i < mensagem.length; i++) {
     var codAscii = mensagem[i].charCodeAt();
     if(codAscii >= 65 && codAscii <= 90){
-       var operacao = (codAscii - 65 + teste) % 26
+       var operacao = (codAscii - 65 + desloca) % 26
      msgCodigo += String.fromCharCode(operacao + 65);
     } else if (codAscii >= 97 && codAscii <= 122){
-        var operacao = (codAscii - 97 + teste) % 26
+        var operacao = (codAscii - 97 + desloca) % 26
       msgCodigo += String.fromCharCode(operacao + 97);
     } else {
         msgCodigo += mensagem[i]
@@ -103,14 +103,14 @@ function descodificarCesar(){
     var resultado = document.querySelector("#resultado")
     var mensagem = document.querySelector("#msg").value
     var msgCodigo= ""
-    var teste = parseInt(deslocamento)
+    var desloca = parseInt(deslocamento)
     for (var i = 0; i < mensagem.length; i++) {
     var codAscii = mensagem[i].charCodeAt();
     if(codAscii >= 65 && codAscii <= 90){
-       var operacao = (codAscii - 65 - teste + 26) % 26
+       var operacao = (codAscii - 65 - desloca + 26) % 26
      msgCodigo += String.fromCharCode(operacao + 65);
     }else if (codAscii >= 97 && codAscii <= 122){
-            var operacao = (codAscii - 97 - teste + 26) % 26
+            var operacao = (codAscii - 97 - desloca + 26) % 26
           msgCodigo += String.fromCharCode(operacao + 97);
     } else {
           msgCodigo += mensagem[i]
