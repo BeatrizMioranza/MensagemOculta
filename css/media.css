@@ -1,53 +1,59 @@
-@media (max-width:700px){
+@media (max-width:700px) {
 
-.titulo{
-    font-size: 35px;
-}
-.paragrafo {
-    width: 80%;
-    font-size: 16px;
-}
-.areaTexto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 60%;
+    .titulo {
+        font-size: 35px;
+    }
 
-}
-.area {
-    width: 300px;
-    height: 150px;
-    border-radius: 3px;
-}
-form {
-    height: 800px;
-}
+    .paragrafo {
+        width: 80%;
+        font-size: 16px;
+    }
 
-.seletor{
-    font-size: 16px;
-}
+    .areaTexto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 60%;
 
-select{
-    text-align: center;
-    font-size: 16px;
-    border-radius: 3px;
-}
-.subTitulo{
-    font-size: 25px;
-}
-.explicacao{
-    font-size: medium;
-    text-align: justify;
-    border: solid 3px #1a296d;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 5%;
-    padding: 30px;
-}
+    }
+
+    .area {
+        width: 300px;
+        height: 150px;
+        border-radius: 3px;
+    }
+
+    form {
+        height: 800px;
+    }
+
+    .seletor {
+        font-size: 16px;
+    }
+
+    select {
+        text-align: center;
+        font-size: 16px;
+        border-radius: 3px;
+    }
+
+    .subTitulo {
+        font-size: 25px;
+    }
+
+    .explicacao {
+        font-size: medium;
+        text-align: justify;
+        border: solid 3px #1a296d;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 5%;
+        padding: 30px;
+    }
 
 
-    
+
 }
