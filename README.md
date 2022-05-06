@@ -16,9 +16,6 @@ césar e base64.
   ➔ Utilizei HTML, CSS e JavaScript, com foco em manipulação
    de DOM, para conceber uma aplicação que esteja de acordo com os requisitos.
   </p>
-  
-
-<img src="" alt="">
 <br>
 <h2 id="linguagens">Softwares & Ferramentas utilizadas 🔧 </h2>
 <ul>
